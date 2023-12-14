@@ -1,0 +1,9 @@
+.retour{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.retour img {
+    width: 35px;
+    height: 35px;
+}

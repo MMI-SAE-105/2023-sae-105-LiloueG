@@ -60,13 +60,14 @@ main p{
     font-weight: regular;
 }
 
-button{
+main a{
     background-color: #ffffff;
     border: none;
     border-bottom: #000000 2px solid;
     padding: 0;
     padding-bottom: 5px;
     font-size: 19px;
+    color: #000000;
 }
 
 h2{
@@ -103,9 +104,10 @@ h2{
     margin: 20px 0;
 }
 
-.billet button{
+.billet a{
     border: 1px #000 solid;
     padding: 10px;
+    color: #000;
 }
 
 footer{
@@ -114,8 +116,7 @@ footer{
     color: #fff;
 }
 
-
-footer a{
+footer .footer__logo{
     display: flex;
     justify-content: center;
 }
@@ -124,7 +125,18 @@ footer p{
     font-family: 'Gentium Plus', serif;
     font-size: 19px;
     font-weight: regular;
-    margin: 20px;	
+    margin: 20px;
+}
+
+.footer_lien{
+    font-family: 'Gentium Plus', serif;
+    font-size: 19px;
+    font-weight: regular;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
 }
 
 footer hr{
