@@ -1,8 +1,11 @@
+@import url("main.css");
+
 header {
     background-color: #f1f1f1;
     padding: 20px;
-    text-align: center;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu {
@@ -12,13 +15,17 @@ header {
     align-items: center;
 }
 
-.menu img {
-    width: 35px;
-    height: 35px;
+.menu p {
+    font-family: Cormorant, sans-serif;
+    font-size: 30px;
+    font-weight: regular;
+    margin: 0;
 }
 
-.menu img logo{
-    width: 35px;
-    height: 35px;
+.menu img {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
 }
 
