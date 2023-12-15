@@ -9,7 +9,9 @@
 <body>
     <header>
         <nav class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
-            <div class="header__cross"><img src="/public/icone/Croix.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen"></div>
+            <div class="header__cross">
+                <img src="/public/icone/Croix.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
+            </div>
             <a class="header__logo" href="index.html">
                 <img src="public/icone/Logoblanc.webp" alt="Logo">
             </a>
@@ -25,10 +27,10 @@
                 </li>
             </ul>
             <div class="reseaux">
-            <img src="public/icone/facebook.png" alt="Facebook">
-            <img src="public/icone/instagram.png" alt="Instagram">
-            <img src="public/icone/tic-tac.png" alt="TikTok">
-        </div>
+                <img src="public/icone/facebook.png" alt="Facebook">
+                <img src="public/icone/instagram.png" alt="Instagram">
+                <img src="public/icone/tic-tac.png" alt="TikTok">
+            </div>
         </nav>
         <a href="index.html">
             <img src="public/icone/Logo.webp" alt="Logo">
