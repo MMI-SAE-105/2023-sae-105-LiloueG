@@ -9,14 +9,34 @@
 </head>
 <body>
     <header>
+        <nav class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <div class="header__cross"><img src="/public/icone/Croix.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen"></div>
+            <a class="header__logo" href="index.html">
+                <img src="public/icone/Logoblanc.webp" alt="Logo">
+            </a>
+            <ul class="header__nav--link">
+                <li class="header__nav--item1">
+                    <a href="./Chronologie_des_oeuvres.html">Chronologie des oeuvres</a>
+                </li>
+                <li class="header__nav--item2">
+                    <a href="./Dominique_perrault.html">Dominique Perrault</a>
+                </li>
+                <li class="header__nav--item3">
+                    <a href="./Contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="reseaux">
+            <img src="public/icone/facebook.png" alt="Facebook">
+            <img src="public/icone/instagram.png" alt="Instagram">
+            <img src="public/icone/tic-tac.png" alt="TikTok">
+        </div>
+        </nav>
         <a href="index.html">
             <img src="public/icone/Logo.webp" alt="Logo">
         </a>
         <p>Fondation Cartier</p>
         <div class="menu">
-            <a href="Menu.html">
-                <img src="/public/icone/menu.png" alt="Menu">
-            </a>
+            <img src="/public/icone/menu.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
         </div>
     </header>
 
