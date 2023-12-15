@@ -64,7 +64,7 @@ main p{
     font-weight: regular;
 }
 
-main a{
+main .more{
     font-family: 'Gentium Plus', serif;
     font-size: 19px;
     font-weight: regular;
