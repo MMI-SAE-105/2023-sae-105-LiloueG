@@ -1,6 +1,7 @@
 .retour{
     display: flex;
     justify-content: flex-end;
+    margin: 20px;
 }
 
 .retour img {
