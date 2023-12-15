@@ -53,6 +53,13 @@
     font-size: 35px;
 }
 
+button {
+    font-family: 'Calisto MT', serif;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
 
 
 
