@@ -45,6 +45,10 @@ img {
     height: 100%;
 }
 
+main {
+    padding: 0 20px;
+}
+
 main h1 {
     font-family: 'Calisto MT', serif;
     font-size: 35px;
@@ -61,6 +65,9 @@ main p{
 }
 
 main a{
+    font-family: 'Gentium Plus', serif;
+    font-size: 19px;
+    font-weight: regular;
     background-color: #ffffff;
     border: none;
     border-bottom: #000000 2px solid;
@@ -76,8 +83,6 @@ h2{
     font-weight: regular;
 }
 
-
-
 .info img{
     width: 35px;
     height: 35px;;
@@ -87,7 +92,6 @@ h2{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px 0;
     gap: 20px;
 }
 
@@ -95,20 +99,29 @@ h2{
     list-style-type: none;
     margin: 0;
     padding-left: 58px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .info li{
     font-family: 'Gentium Plus', serif;
     font-size: 19px;
     font-weight: regular;
-    margin: 20px 0;
+
 }
 
-.billet a{
+.billet{
+    display: inline-block;
     border: 1px #000 solid;
     padding: 10px;
+    font-family: 'Gentium Plus', serif;
+    font-size: 19px;
+    font-weight: regular;
     color: #000;
+    margin: 20px;
 }
+
 
 footer{
     padding: 50px 0;
