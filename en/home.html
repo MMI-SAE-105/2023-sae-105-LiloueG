@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <div class="header__cross">
+                <img src="../public/icone/Croix.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
+            </div>
+            <a class="header__logo" href="index.html">
+                <img src="../public/icone/Logoblanc.webp" alt="Logo">
+            </a>
+            <ul class="header__nav--link">
+                <li class="header__nav--item1">
+                    <a href="../Chronologie_des_oeuvres.html">Chronology of works</a>
+                </li>
+                <li class="header__nav--item2">
+                    <a href="../Dominique_perrault.html">Dominique Perrault</a>
+                </li>
+                <li class="header__nav--item3">
+                    <a href="../Contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="reseaux">
+            <img src="../public/icone/facebook.png" alt="Facebook">
+            <img src="../public/icone/instagram.png" alt="Instagram">
+            <img src="../public/icone/tic-tac.png" alt="TikTok">
+        </div>
+        </nav>
+        <a href="index.html">
+            <img src="../public/icone/Logo.webp" alt="Logo">
+        </a>
+        <p>Fondation Cartier</p>
+        <div class="menu">
+            <img src="../public/icone/menu.png" alt="Menu"  @click="menuIsOpen = !menuIsOpen">
+        </div>
+    </header>
+
+    <main>
+        <div class="titre">  
+            <h1>
+                Architecture Redefined by Dominique Perrault
+            </h1>
+        </div>
+        <img src="../public/img/dominique-perrault 1.webp" alt="Dominique Perrault">
+        <div class="texte">
+            <p>
+                Immerse yourself in the innovative world of Dominique Perrault at the Fondation Cartier. Explore his groundbreaking work, from the iconic Bibliothèque Nationale de France to Olympic stadiums, a testament to his boundless creativity.
+            </p>
+            <p>
+                Discover bold lines and infinite spaces that redefine our urban landscape. Be inspired by the ingenuity of a master builder constantly pushing back the boundaries of modern architecture.
+            </p>
+        </div>
+        <a class="more" href="../Dominique_perrault.html">
+            More
+        </a>
+        <h2>
+            Main works
+        </h2>
+        <div class="carrousel" x-data="{hrefCourant: 1,}">
+            <div class="carrousel__picture">
+                <div class="carrousel__parent-ecrans" x-ref="parent">
+                    <div id="ecran-1" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Stade_olympe_de_madrid.html"><img src="../public/img/Group 1.webp" alt="image ecran 1"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-2" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Tour_DC_Vienne.html"><img src="../public/img/Group 2.webp" alt="image ecran 2"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-3" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Pont_de_l-Europe.html"><img src="../public/img/Group 3.webp" alt="image ecran 3"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-4" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Bibliotheque_national_de_france.html"><img src="../public/img/Group 4.webp" alt="image ecran 4"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-5" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Hippodrome_longchamps.html"><img src="../public/img/Group 5.webp" alt="image ecran 5"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-6" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Piazza_garibaldi.html"><img src="../public/img/Group 6.webp" alt="image ecran 6"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-7" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Centre_olympique_roland_garros.html"><img src="../public/img/Group 7.webp" alt="image ecran 7"></a>
+                        </figure>
+                    </div>
+                    <div id="ecran-8" class="carrousel__ecran">
+                        <figure>
+                            <a href="/Centre_de_convention.html"><img src="../public/img/Group 8.webp" alt="image ecran 8"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        <div class="info">
+            <p>
+                Rejoignez nous
+            </p>
+            <div class="info__tarif">
+                <img src="../public/icone/espace-reserve.png" alt="Localisation">
+                <p>
+                    Fondation Cartier, 261 Bd Raspail, 75014 Paris
+                </p>
+            </div>
+            <div class="info__tarif">
+                <img src="../public/icone/calendrier.png" alt="Calendrier">
+                <p>
+                    April 13 to June 23, 2024
+                </p>
+            </div>
+            <div class="info__tarif">
+                <img src="../public/icone/lhorloge.png" alt="Horloge">
+                <p>
+                    Daily 11am-8pm, except Mondays. Nocturne on Tuesdays, until 10pm. Halls close at 7.45pm (9.45pm on Tuesdays).
+                </p>
+            </div>
+            <div class="info__tarif">
+                <img src="../public/icone/euro.png" alt="Tarifs">
+                <p>
+                    Rates :
+                </p>
+            </div>
+            <ul>
+                <li>
+                    Full price    11€
+                </li>
+                <li>
+                    Reduce price  7,50€
+                </li>
+                <li>
+                    Discount 13 - 25 years  5€
+                </li>
+                <li>
+                    Fondation Cartier Pass  18€ - 50€
+                </li>
+                <li>
+                    Under 13, Annual pass, Icom card, press card, disability card, Fondation Cartier Pass, Students Free of charge
+                </li> 
+            </ul>  
+        </div>
+        <div class="billet">
+            <a href="https://fondation-cartier.tickeasy.com/fr-FR/accueil">
+                Billetterie
+            </a>
+        </div>
+    </main>
+    <footer>
+        <a class="footer__logo" href="index.html">
+            <img src="../public/icone/Logoblanc.webp" alt="Logo">
+        </a>
+        <div class="footer__lien">
+            <a href="Contact.html">
+                Contact
+            </a>
+            <a>
+                This site was created as part of an SAE for the BUT MMI Montbéliard training program.
+            </a>
+        </div>
+        <hr>
+        <p>
+            Join us
+        </p>
+        <div class="reseaux">
+            <img src="../public/icone/facebook.png" alt="Facebook">
+            <img src="../public/icone/instagram.png" alt="Instagram">
+            <img src="../public/icone/tic-tac.png" alt="TikTok">
+        </div>
+    </footer>
+</body>
+</html>
