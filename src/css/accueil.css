@@ -76,6 +76,7 @@ main .more{
     font-size: 19px;
     color: #000000;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 h2{
@@ -89,7 +90,7 @@ h2{
     height: 35px;;
 }
 
-.info_tarif{
+.info__tarif{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -142,7 +143,7 @@ footer p{
     margin: 20px;
 }
 
-.footer_lien{
+.footer__lien{
     font-family: 'Gentium Plus', serif;
     font-size: 19px;
     font-weight: regular;
@@ -162,6 +163,11 @@ footer hr{
 footer img{
     width: 37px;
     height: 47px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .reseaux{

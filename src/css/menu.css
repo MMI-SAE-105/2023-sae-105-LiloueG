@@ -1,0 +1,65 @@
+.header__nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000;
+    z-index: 1000;
+}
+
+.header__cross {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.header__logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo img {
+    width: 37px;
+    height: 47px;
+}
+
+.header__cross img {
+    width: 35px;
+    height: 35px;
+}
+
+.header__nav--link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 30px;
+}
+
+.header__nav--link li {
+    border-bottom: 1px solid #fff;
+}
+
+.header__nav a {
+    color : #fff;
+}
+
+
+.header__nav a {
+    font-family: 'Calisto MT', serif;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+.noscroll body {
+    overflow: hidden;
+}

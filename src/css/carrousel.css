@@ -4,7 +4,7 @@
     align-items: center;
   }
   
-  .carrousel_parent-ecrans {
+  .carrousel__parent-ecrans {
     width: 100vw;
     display: flex;
     overflow-x: scroll;
@@ -14,13 +14,13 @@
     text-align: center;
   }
   
-  .carrousel_ecran {
+  .carrousel__ecran {
     scroll-snap-align: start;
     width: 100%;
     flex: none;
   }
   
-  .carrousel_picture {
+  .carrousel__picture {
     position: relative;
   }
   
