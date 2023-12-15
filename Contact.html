@@ -47,25 +47,16 @@
             Vous pouvez nous la soumettre en remplissant le formulaire ci-dessous.
         </p>
         <form action="traitement.php" method="post">
-            <p>
-                <label for="nom">Nom</label>
-                <input type="text" name="nom" id="nom" required>
-            </p>
-            <p>
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" required>
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Envoyer">
-            </p>
+            <input type="text" placeholder="Nom" >
+
+            <input type="text" placeholder="Prénom">
+            
+            <input type="email" placeholder="E-mail">
+
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+
+            <div class="form__input"><input type="submit" value="Envoyer"></div>
+
     </main>
     <footer>
         <a class="footer__logo" href="index.html">

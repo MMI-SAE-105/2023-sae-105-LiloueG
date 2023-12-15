@@ -3,6 +3,7 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
+    gap: 40px;
 }
 
 label {
@@ -12,18 +13,38 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    font-family: 'Gentium Plus', serif;
+    font-size: 19px;
+    font-weight: regular;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: #000000 2px solid;
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 19px;
+    color: #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    border: 1px #000 solid;
+    padding: 10px;
+    font-family: 'Gentium Plus', serif;
+    font-size: 19px;
+    font-weight: regular;
+    color: #000;
+    margin: 20px;
+    background: none;
     cursor: pointer;
+    width: 100px;
+}
+
+.form__input {
+    display: flex;
+    justify-content: flex-end;
 }
 
 input[type="submit"]:hover {

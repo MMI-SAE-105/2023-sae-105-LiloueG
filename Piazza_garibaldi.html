@@ -48,21 +48,7 @@
             La Piazza Garibaldi, conçue par Dominique Perrault, est le cœur vibrant de Naples, un lieu où l'histoire et la modernité se rencontrent. Cette place animée, réaménagée avec audace, offre un espace ouvert accueillant et multifonctionnel au cœur de la ville. Bordée d'architectures contemporaines, cette piazza est devenue un lieu de rencontre incontournable pour les habitants et les visiteurs. Avec ses espaces ouverts, ses zones ombragées et ses perspectives dynamiques, la Piazza Garibaldi incarne l'esprit vivant et évolutif de Naples.
         </p>
         <div class="retour">
-            <img id="retourImage" src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
-            <script>
-                document.getElementById('retourImage').addEventListener('click', function() {
-                    // Enregistrer la dernière page visitée dans le localStorage
-                    localStorage.setItem('dernierePage', window.location.href);
-        
-                    // Rediriger vers la dernière page visitée
-                    var dernierePage = localStorage.getItem('dernierePage');
-                    if (dernierePage) {
-                        window.location.href = dernierePage;
-                    } else {
-                        alert("Aucune dernière page enregistrée.");
-                    }
-                });
-            </script>
+            <img id="retourImage" src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour" @click="window.history.back();">
         </div>
     </main>
     <footer>
