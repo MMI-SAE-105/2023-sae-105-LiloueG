@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Bibliothèque National de France</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="retour.html"></script>
 </head>
 <body>
     <header>
@@ -27,7 +28,21 @@
             La Bibliothèque Nationale de France (BNF), conçue par Dominique Perrault, est un chef-d'œuvre architectural parisien. Avec ses quatre tours en forme de livres ouverts, elle s'impose comme un symbole emblématique sur les rives de la Seine. Ce monument audacieux, inauguré en 1996, allie brillamment modernité et fonctionnalité. Ses vastes espaces accueillent une précieuse collection culturelle tout en offrant aux visiteurs une immersion lumineuse et contemporaine. La BNF incarne ainsi l'essence même de l'architecture innovante, devenant un repère incontournable dans le panorama culturel de Paris.
         </p>
         <div class="retour">
-            <img src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <img id="retourImage" src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <script>
+                document.getElementById('retourImage').addEventListener('click', function() {
+                    // Enregistrer la dernière page visitée dans le localStorage
+                    localStorage.setItem('dernierePage', window.location.href);
+        
+                    // Rediriger vers la dernière page visitée
+                    var dernierePage = localStorage.getItem('dernierePage');
+                    if (dernierePage) {
+                        window.location.href = dernierePage;
+                    } else {
+                        alert("Aucune dernière page enregistrée.");
+                    }
+                });
+            </script>
         </div>
     </main>
     <footer>

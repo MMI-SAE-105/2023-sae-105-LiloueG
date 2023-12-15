@@ -27,7 +27,21 @@
             La construction du Centre de Convention et du Hall d'Exposition de León, en Espagne, incarne un véritable symbole d'innovation architecturale. Niché au cœur de cette ville historique, ce complexe audacieux allie élégance moderne et fonctionnalité. Avec ses lignes contemporaines et ses espaces polyvalents, ce centre offre une plateforme exceptionnelle pour accueillir des événements d'envergure internationale. Témoin du dynamisme culturel de León, ce centre illustre parfaitement la fusion entre tradition et modernité, devenant ainsi un lieu emblématique propice à l'échange et à l'excellence événementielle.
         </p>
         <div class="retour">
-            <img src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <img id="retourImage" src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <script>
+                document.getElementById('retourImage').addEventListener('click', function() {
+                    // Enregistrer la dernière page visitée dans le localStorage
+                    localStorage.setItem('dernierePage', window.location.href);
+        
+                    // Rediriger vers la dernière page visitée
+                    var dernierePage = localStorage.getItem('dernierePage');
+                    if (dernierePage) {
+                        window.location.href = dernierePage;
+                    } else {
+                        alert("Aucune dernière page enregistrée.");
+                    }
+                });
+            </script>
         </div>
     </main>
     <footer>

@@ -28,7 +28,21 @@
             Son design contemporain s'intègre harmonieusement dans le paysage urbain tout en offrant aux piétons et cyclistes une expérience immersive et sécurisée. Symbole de modernité, le Pont de l'Europe devient ainsi un véritable trait d'union entre l'histoire et la modernité d'Orléans.
         </p>
         <div class="retour">
-            <img src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <img id="retourImage" src="public/icone/symbole-de-ligne-de-fleche-gauche.png" alt="Retour">
+            <script>
+                document.getElementById('retourImage').addEventListener('click', function() {
+                    // Enregistrer la dernière page visitée dans le localStorage
+                    localStorage.setItem('dernierePage', window.location.href);
+        
+                    // Rediriger vers la dernière page visitée
+                    var dernierePage = localStorage.getItem('dernierePage');
+                    if (dernierePage) {
+                        window.location.href = dernierePage;
+                    } else {
+                        alert("Aucune dernière page enregistrée.");
+                    }
+                });
+            </script>
         </div>
     </main>
     <footer>
